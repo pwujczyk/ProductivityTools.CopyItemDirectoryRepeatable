@@ -7,7 +7,8 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>MyApplication</RootNamespace>
     <AssemblyName>MyApplication</AssemblyName>
-    <Name>Copy-ItemDirectoryRepeatable</Name>
+    <Name>ProductivityTools.CopyItemDirectoryRepeatable</Name>
+    <ProjectHome />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,8 +29,8 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
-    <Compile Include="ProductivityTools.PSCopyItemDirectoryRepeatable.psd1" />
-    <Compile Include="ProductivityTools.PSCopyItemDirectoryRepeatable.psm1" />
+    <Compile Include="ProductivityTools.CopyItemDirectoryRepeatable.psd1" />
+    <Compile Include="ProductivityTools.CopyItemDirectoryRepeatable.psm1" />
     <Compile Include="Runner.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
