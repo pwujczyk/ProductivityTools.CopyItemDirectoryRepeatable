@@ -17,8 +17,9 @@ In PowerShell Copy-Item bahaves differently when target folder exists and differ
 
 When you are using Copy-Item the destination doesn’t exist it assumes you’re trying to copy/rename the source to be the destination, whereas if the destination exists it assumes you’re trying to copy underneath it. This results sometimes in copying directory to requested destination and sometimes to folder inside it.
 
-Example below visualize the situation. Initial state
-![Diagram](Images/Copy1.png)
+Example below visualize the situation. Initial state: 
+
+![](Images/Copy1.png)
 
 After first Copy-Item invocation.
 
@@ -27,7 +28,8 @@ Copy-Item D:\Trash\Test\ D:\Trash\TestDest\Test -Recurse -Force
 ```
 
 TestElement directory is copied under Test directory.
-![Diagram](Images/Copy2.png)
+
+![](Images/Copy2.png)
 
 And after second Copy-Item invocation whole Test directory is copied to target Test.
 
@@ -35,7 +37,7 @@ And after second Copy-Item invocation whole Test directory is copied to target T
 Copy-Item D:\Trash\Test\ D:\Trash\TestDest\Test -Recurse -Force
 ```
 <!--og-image-->
-![Diagram](Images/Copy3.png)
+![](Images/Copy3.png)
 
 
 Following module helps when you would like to copy content of one folder to other and always have the same result every time.
