@@ -1,8 +1,8 @@
 <!--Category:Powershell--> 
  <p align="right">
-    <a href="https://www.powershellgallery.com/packages/ProductivityTools.PSPublishModuleTo/"><img src="Images/Header/Powershell_border_40px.png" /></a>
-    <a href="http://productivitytools.tech/publish-moduleto/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
-    <a href="https://github.com/pwujczyk/ProductivityTools.PSPublishModuleTo"><img src="Images/Header/Github_border_40px.png" /></a>
+    <a href="https://www.powershellgallery.com/packages/ProductivityTools.CopyItemDirectoryRepeatable/"><img src="Images/Header/Powershell_border_40px.png" /></a>
+    <a href="http://productivitytools.tech/copy-itemdirectoryrepeatable/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+    <a href="https://github.com/pwujczyk/ProductivityTools.CopyItemDirectoryRepeatable"><img src="Images/Header/Github_border_40px.png" /></a>
 </p>
 <p align="center">
     <a href="http://productivitytools.tech/">
