@@ -1,2 +1,41 @@
-# ProductivityTools.PSCopyItemDirectoryRepeatable
-It performs a copy between the directories. The difference between this and single copy-item is repeatable of the result. Every time you will use copy-item the same result will occur
+<!--Category:Powershell--> 
+ <p align="right">
+    <a href="https://www.powershellgallery.com/packages/ProductivityTools.PSPublishModuleTo/"><img src="Images/Header/Powershell_border_40px.png" /></a>
+    <a href="http://productivitytools.tech/publish-moduleto/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+    <a href="https://github.com/pwujczyk/ProductivityTools.PSPublishModuleTo"><img src="Images/Header/Github_border_40px.png" /></a>
+</p>
+<p align="center">
+    <a href="http://productivitytools.tech/">
+        <img src="Images/Header/LogoTitle_green_500px.png" />
+    </a>
+</p>
+
+# Copy Item Directory Repeatable
+
+In PowerShell Copy-Item bahaves differently when target folder exists and different when not. Module provides functionality which is idempotent.
+<!--more-->
+
+When you are using Copy-Item the destination doesn’t exist it assumes you’re trying to copy/rename the source to be the destination, whereas if the destination exists it assumes you’re trying to copy underneath it. This results sometimes in copying directory to requested destination and sometimes to folder inside it.
+
+Example below visualize the situation. Initial state
+![Diagram](Images/Copy1.png)
+
+After first Copy-Item invocation.
+
+```powershell
+Copy-Item D:\Trash\Test\ D:\Trash\TestDest\Test -Recurse -Force
+```
+
+TestElement directory is copied under Test directory.
+![Diagram](Images/Copy2.png)
+
+And after second Copy-Item invocation whole Test directory is copied to target Test.
+
+```powershell
+Copy-Item D:\Trash\Test\ D:\Trash\TestDest\Test -Recurse -Force
+```
+<!--og-image-->
+![Diagram](Images/Copy3.png)
+
+
+Following module helps when you would like to copy content of one folder to other and always have the same result every time.
