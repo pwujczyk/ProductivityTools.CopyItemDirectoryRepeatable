@@ -41,3 +41,7 @@ Copy-Item D:\Trash\Test\ D:\Trash\TestDest\Test -Recurse -Force
 
 
 Following module helps when you would like to copy content of one folder to other and always have the same result every time.
+
+```powershell
+Copy-ItemDirectoryRepeatable D:\Trash\Test\ D:\Trash\TestDest\Test -Recurse -Force
+```
